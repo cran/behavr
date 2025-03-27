@@ -2,7 +2,7 @@
 #'
 #' This function returns the metadata from a [behavr] table.
 #' @param x [behavr] object
-#' @return a [data.table] representing the metadata in `x`
+#' @return a [data.table::data.table] representing the metadata in `x`
 #' @examples
 #' set.seed(1)
 #' met <- data.table::data.table(id = 1:5,
@@ -50,7 +50,7 @@ setmeta <- function(x, new){
   #   x <- .x[ids_in_md]
   #   #?data.table::setDT()
   # }
-  
+
   setbehavr(x,new)
  # data.table::setattr(x,"metadata",new)
 }

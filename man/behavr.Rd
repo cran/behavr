@@ -4,7 +4,7 @@
 \alias{behavr}
 \alias{setbehavr}
 \alias{is.behavr}
-\title{An S3 class, based on \link{data.table}, to store ethomics data}
+\title{An S3 class, based on \link[data.table:data.table]{data.table::data.table}, to store ethomics data}
 \usage{
 behavr(x, metadata)
 
@@ -13,9 +13,9 @@ setbehavr(x, metadata)
 is.behavr(x)
 }
 \arguments{
-\item{x}{\link{data.table} containing all measurements}
+\item{x}{\link[data.table:data.table]{data.table::data.table} containing all measurements}
 
-\item{metadata}{\link{data.table} containing the metadata}
+\item{metadata}{\link[data.table:data.table]{data.table::data.table} containing the metadata}
 }
 \description{
 In modern behavioural biology,
@@ -31,10 +31,10 @@ It is designed to be both memory-efficient and user-friendly.
 For instance, it abstracts joins between data and metavariables.
 }
 \details{
-A \code{behavr} table is a \link{data.table}.
-Therefore, it can be used by any function that would work on a \link{data.frame} or a \link{data.table}.
-Most of the operation such as variable creation, subsetting and joins are inherited from the \link{data.table}
-\code{[]} operator, following the convention \code{DT[i,j,by]} (see data table package for detail).
+A \code{behavr} table is a \link[data.table:data.table]{data.table::data.table}.
+Therefore, it can be used by any function that would work on a \link{data.frame} or a \link[data.table:data.table]{data.table::data.table}.
+Most of the operation such as variable creation, subsetting and joins are inherited from the \link[data.table:data.table]{data.table::data.table}
+\verb{[]} operator, following the convention \code{DT[i,j,by]} (see data table package for detail).
 These operations are applied on the data.
 Metadata can be accessed using \code{meta=TRUE}: \code{DT[i,j,by, meta=TRUE]},
 which allows extraction of subsets, creation of metavariables, etc.
@@ -86,7 +86,7 @@ d[meta = TRUE]
 }
 \seealso{
 \itemize{
-\item \link{data.table} -- on which \code{behavr} is based
+\item \link[data.table:data.table]{data.table::data.table} -- on which \code{behavr} is based
 \item \link{xmv} -- to join metavariables
 \item \link{rejoin} -- to join all metadata
 \item \link{bind_behavr_list} -- to merge several \code{behavr} tables

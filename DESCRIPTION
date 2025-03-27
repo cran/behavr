@@ -1,7 +1,7 @@
 Package: behavr
 Title: Canonical Data Structure for Behavioural Data
-Date: 2019-01-02
-Version: 0.3.2
+Date: 2025-03-27
+Version: 0.3.3
 Authors@R: c(
     person("Quentin", "Geissmann", role = c("aut", "cre"), email = "qgeissmann@gmail.com")
     )
@@ -11,13 +11,12 @@ Imports: methods
 Suggests: testthat, covr, knitr
 License: GPL-3
 Encoding: UTF-8
-LazyData: true
 URL: https://github.com/rethomics/behavr
 BugReports: https://github.com/rethomics/behavr/issues
-RoxygenNote: 6.1.1
+RoxygenNote: 7.3.2
 NeedsCompilation: no
-Packaged: 2019-01-02 16:50:59 UTC; quentin
+Packaged: 2025-03-27 12:54:46 UTC; quentin
 Author: Quentin Geissmann [aut, cre]
 Maintainer: Quentin Geissmann <qgeissmann@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-01-03 01:10:13 UTC
+Date/Publication: 2025-03-27 13:30:01 UTC

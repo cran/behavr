@@ -15,7 +15,7 @@ setmeta(x, new)
 \item{new}{a new metadata table}
 }
 \value{
-a \link{data.table} representing the metadata in \code{x}
+a \link[data.table:data.table]{data.table::data.table} representing the metadata in \code{x}
 }
 \description{
 This function returns the metadata from a \link{behavr} table.

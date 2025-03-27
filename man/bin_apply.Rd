@@ -5,13 +5,20 @@
 \alias{bin_apply_all}
 \title{Bin a variable (typically time) and compute an aggregate for each bin}
 \usage{
-bin_apply(data, y, x = "t", x_bin_length = mins(30),
-  wrap_x_by = NULL, FUN = mean, ...)
+bin_apply(
+  data,
+  y,
+  x = "t",
+  x_bin_length = mins(30),
+  wrap_x_by = NULL,
+  FUN = mean,
+  ...
+)
 
 bin_apply_all(data, ...)
 }
 \arguments{
-\item{data}{\link{data.table} or \link{behavr} table (see details)}
+\item{data}{\link[data.table:data.table]{data.table::data.table} or \link{behavr} table (see details)}
 
 \item{y}{variable or expression to be aggregated}
 

@@ -6,7 +6,7 @@
 #' Indeed, joining many metavariables to
 #' very long time series may result in unnecessary -- and prohibitively -- large memory footprint.
 #' @inheritParams meta
-#' @return a [data.table]
+#' @return a [data.table::data.table]
 #' @examples
 #' set.seed(1)
 #' met <- data.table::data.table(id = 1:5,

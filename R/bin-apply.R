@@ -4,7 +4,7 @@
 #' for bins of a another variable `x` (typically time).
 #'
 #'
-#' @param data [data.table] or [behavr] table (see details)
+#' @param data [data.table::data.table] or [behavr] table (see details)
 #' @param y variable or expression to be aggregated
 #' @param x variable or expression to be binned
 #' @param x_bin_length length of the bins (same unit as `x`)

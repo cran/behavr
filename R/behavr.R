@@ -1,6 +1,6 @@
 setOldClass(c("behavr", "data.table"))
 
-#' An S3 class, based on [data.table], to store ethomics data
+#' An S3 class, based on [data.table::data.table], to store ethomics data
 #'
 #' In modern behavioural biology,
 #' it is common to record long time series of several *variables* (such as position, angle,
@@ -14,16 +14,16 @@ setOldClass(c("behavr", "data.table"))
 #' It is designed to be both memory-efficient and user-friendly.
 #' For instance, it abstracts joins between data and metavariables.
 #' @details
-#' A `behavr` table is a [data.table].
-#' Therefore, it can be used by any function that would work on a [data.frame] or a [data.table].
-#' Most of the operation such as variable creation, subsetting and joins are inherited from the [data.table]
+#' A `behavr` table is a [data.table::data.table].
+#' Therefore, it can be used by any function that would work on a [data.frame] or a [data.table::data.table].
+#' Most of the operation such as variable creation, subsetting and joins are inherited from the [data.table::data.table]
 #' `[]` operator, following the convention `DT[i,j,by]` (see data table package for detail).
 #' These operations are applied on the data.
 #' Metadata can be accessed using `meta=TRUE`: `DT[i,j,by, meta=TRUE]`,
 #' which allows extraction of subsets, creation of metavariables, etc.
 #' @name behavr
 #' @seealso
-#' * [data.table] -- on which `behavr` is based
+#' * [data.table::data.table] -- on which `behavr` is based
 #' * [xmv] -- to join metavariables
 #' * [rejoin] -- to join all metadata
 #' * [bind_behavr_list] -- to merge several `behavr` tables
@@ -70,8 +70,8 @@ NULL
 # Construction ------------------------------------------------------------
 
 #' @rdname behavr
-#' @param x [data.table] containing all measurements
-#' @param metadata [data.table] containing the metadata
+#' @param x [data.table::data.table] containing all measurements
+#' @param metadata [data.table::data.table] containing the metadata
 #' @details Both `x` and `metadata` should have a **column set as key** with **the same name** (typically named `id`).
 #' `behavr()` copies `x`, whilst `setbehavr()` uses reference. `metadata` is always copied.
 #' @export

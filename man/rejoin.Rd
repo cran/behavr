@@ -10,7 +10,7 @@ rejoin(x)
 \item{x}{\link{behavr} object}
 }
 \value{
-a \link{data.table}
+a \link[data.table:data.table]{data.table::data.table}
 }
 \description{
 This function joins the data of a \link{behavr} table to its own metadata.
